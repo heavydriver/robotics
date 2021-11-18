@@ -10,15 +10,11 @@ import com.qualcomm.robotcore.hardware.ColorSensor;
 public class EncoderAuto extends LinearOpMode {
     private final ElapsedTime runtime = new ElapsedTime();
 
-    // Initializes drive motors to null
     private static DcMotor frontLeft = null;
     private static DcMotor frontRight = null;
     private static DcMotor backLeft = null;
     private static DcMotor backRight = null;
-//    private static DcMotor carouselMotor = null;
-//    private static ColorSensor color = null;
 
-    // measure
     static final double     COUNTS_PER_MOTOR_REV = 1120 ;    // eg: TETRIX Motor Encoder
     static final double     DRIVE_GEAR_REDUCTION = 2.0 ;     // This is < 1.0 if geared UP
     static final double     WHEEL_DIAMETER_INCHES = 4.0 ;     // For figuring circumference
